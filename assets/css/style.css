@@ -2,13 +2,13 @@
    VARIABLES & RESET
 ─────────────────────────────────────────────────────── */
 :root {
-  --bg:         #f8f6f1;
-  --bg-alt:     #f0ede6;
-  --text:       #1c1b18;
-  --text-muted: #7a7468;
-  --accent:     #4a6741;
-  --accent-warm:#c07a47;
-  --border:     #e0dbd2;
+  --bg:         #f7f9f4;   /* white with a whisper of pale green */
+  --bg-alt:     #eef4e8;   /* pale green for alternate sections */
+  --text:       #1a2e1a;   /* dark green (replaces near-black) */
+  --text-muted: #5a7a62;   /* muted mid-green for secondary text */
+  --accent:     #7ab8c2;   /* light blue for links & highlights */
+  --accent-warm:#e8f0b0;   /* pale yellow accent */
+  --border:     #c8dfc2;   /* pale green-tinted border */
   --font-serif: 'Lora', Georgia, serif;
   --font-sans:  'Jost', system-ui, sans-serif;
   --max-w:      1100px;
