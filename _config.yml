@@ -1,16 +1,15 @@
-title: "Your Name"
-description: "Developer & Writer"
+title: "Chinguun Munkhtsetseg"
+description: "Genetics & Genomics @ DKU"
 baseurl: ""
-url: "https://yourusername.github.io"
+url: "https://chinguunxo.github.io"
 
 author:
-  name: "Your Name"
-  email: "you@email.com"
-  bio: "A short line about who you are and what you care about."
-  location: "City, Country"
-  github: "yourusername"
-  twitter: "yourhandle"
-  linkedin: "yourlinkedin"
+  name: "Chinguun Munkhtsetseg"
+  email: "cm720@duke.edu"
+  bio: "Hi! I am an undergraduate student and aspiring bioinformatician at Duke Kunshan University, with a huge passion for epigenetics and RNA biology."
+  location: "Kunshan, Suzhou, China"
+  github: "chinguunxo"
+  linkedin: "chinguun-m"
 
 # ── Build settings ──────────────────────────────────────
 markdown: kramdown
