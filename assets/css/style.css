@@ -144,8 +144,18 @@ p:last-child { margin-bottom: 0; }
 .hero-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  width: 100%;
+  width: 70%;
   padding-top: 64px;
+}
+
+.cols {
+   flex-direction: row;
+   justify-content: center;
+}
+
+.face {
+   width: 30%;
+   margin: 5;
 }
 
 .hero-eyebrow {
