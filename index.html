@@ -1,0 +1,209 @@
+---
+layout: default
+title: Home
+---
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Hello, I'm</p>
+    <h1 class="hero-name">{{ site.title }}</h1>
+    <p class="hero-tagline">{{ site.description }}</p>
+    <div class="hero-cta">
+      <a href="#about" class="btn btn-primary">About me</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">scroll ↓</div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section class="section" id="about">
+  <div class="section-inner two-col">
+    <div class="section-label">
+      <span>01 — About</span>
+    </div>
+    <div class="section-content">
+      <h2>A bit about me</h2>
+      <p class="lead">
+        {{ site.author.bio }}
+      </p>
+      <p>
+        I'm based in {{ site.author.location }}. I write about the things I build, learn, and find interesting — you can find those in my <a href="/blog">blog</a>.
+      </p>
+      <ul class="about-details">
+        <li><span>Location</span> {{ site.author.location }}</li>
+        <li><span>Email</span> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+        <li><span>GitHub</span> <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">github.com/{{ site.author.github }}</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ EXPERIENCE ═══════════ -->
+<section class="section section-alt" id="experience">
+  <div class="section-inner two-col">
+    <div class="section-label">
+      <span>02 — Experience</span>
+    </div>
+    <div class="section-content">
+      <h2>Where I've worked</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Job Title</h3>
+              <p class="timeline-org">Company Name</p>
+            </div>
+            <span class="timeline-date">2023 — Present</span>
+          </div>
+          <p>Brief description of what you did and the impact you had. Keep it punchy — 1 or 2 sentences.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Previous Role</h3>
+              <p class="timeline-org">Previous Company</p>
+            </div>
+            <span class="timeline-date">2021 — 2023</span>
+          </div>
+          <p>What you built, learned, or contributed here.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Earlier Role</h3>
+              <p class="timeline-org">Another Company</p>
+            </div>
+            <span class="timeline-date">2019 — 2021</span>
+          </div>
+          <p>A short description of this position.</p>
+        </div>
+      </div>
+
+      <div class="education-block">
+        <h3>Education</h3>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Degree Name</h3>
+              <p class="timeline-org">University Name</p>
+            </div>
+            <span class="timeline-date">2015 — 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROJECTS ═══════════ -->
+<section class="section" id="projects">
+  <div class="section-inner two-col">
+    <div class="section-label">
+      <span>03 — Projects</span>
+    </div>
+    <div class="section-content">
+      <h2>Things I've built</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <h3>Project Name</h3>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <p>A sentence or two describing what this project does and why you built it.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h3>Another Project</h3>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <p>What does it do? What problem does it solve? What did you learn building it?</p>
+          <div class="project-tags">
+            <span>Python</span><span>FastAPI</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <h3>Side Project</h3>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <p>Even small things are worth showing. Describe it simply.</p>
+          <div class="project-tags">
+            <span>Go</span><span>CLI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ BLOG PREVIEW ═══════════ -->
+<section class="section section-alt" id="blog-preview">
+  <div class="section-inner two-col">
+    <div class="section-label">
+      <span>04 — Writing</span>
+    </div>
+    <div class="section-content">
+      <h2>Recent posts</h2>
+      <div class="blog-list">
+        {% for post in site.posts limit:4 %}
+        <a href="{{ post.url | relative_url }}" class="blog-list-item">
+          <div class="blog-list-title">{{ post.title }}</div>
+          <div class="blog-list-meta">
+            <span class="blog-list-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            {% if post.tags.size > 0 %}<span class="blog-list-tag">{{ post.tags[0] }}</span>{% endif %}
+          </div>
+        </a>
+        {% else %}
+        <p class="empty-state">No posts yet — check back soon.</p>
+        {% endfor %}
+      </div>
+      {% if site.posts.size > 4 %}
+      <a href="{{ '/blog' | relative_url }}" class="see-all-link">See all posts →</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section class="section" id="contact">
+  <div class="section-inner two-col">
+    <div class="section-label">
+      <span>05 — Contact</span>
+    </div>
+    <div class="section-content">
+      <h2>Get in touch</h2>
+      <p class="lead">
+        Whether you have a question, a project idea, or just want to say hello — I'd love to hear from you.
+      </p>
+      <a href="mailto:{{ site.author.email }}" class="btn btn-primary email-btn">
+        {{ site.author.email }}
+      </a>
+      <div class="social-links">
+        {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+        {% if site.author.linkedin %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+        {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>

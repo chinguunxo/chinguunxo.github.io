@@ -1,0 +1,24 @@
+title: "Your Name"
+description: "Developer & Writer"
+baseurl: ""
+url: "https://yourusername.github.io"
+
+author:
+  name: "Your Name"
+  email: "you@email.com"
+  bio: "A short line about who you are and what you care about."
+  location: "City, Country"
+  github: "yourusername"
+  twitter: "yourhandle"
+  linkedin: "yourlinkedin"
+
+# ── Build settings ──────────────────────────────────────
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+highlighter: rouge
+
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed

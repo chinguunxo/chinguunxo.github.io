@@ -1,0 +1,40 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="blog-index">
+  <div class="blog-index-inner">
+    <div class="blog-index-header">
+      <p class="hero-eyebrow"><a href="/">← Home</a></p>
+      <h1>Writing</h1>
+      <p class="blog-index-desc">Thoughts on things I build, read, and think about.</p>
+    </div>
+
+    {% if site.posts.size > 0 %}
+    <div class="blog-full-list">
+      {% assign post_years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      {% for year_group in post_years %}
+      <div class="blog-year-group">
+        <h2 class="blog-year">{{ year_group.name }}</h2>
+        {% for post in year_group.items %}
+        <a href="{{ post.url | relative_url }}" class="blog-list-item">
+          <div class="blog-list-title">{{ post.title }}</div>
+          <div class="blog-list-meta">
+            <span class="blog-list-date">{{ post.date | date: "%b %-d" }}</span>
+            {% if post.tags.size > 0 %}
+            <div class="blog-tags-inline">
+              {% for tag in post.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="empty-state">No posts yet. Check back soon!</p>
+    {% endif %}
+  </div>
+</section>
