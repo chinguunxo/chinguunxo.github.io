@@ -142,21 +142,32 @@ p:last-child { margin-bottom: 0; }
 }
 
 .hero-inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  width: 70%;
-  padding-top: 64px;
+  flex: 1;
+  min-width: 0;
 }
 
 .cols {
-   flex-direction: cols;
-   justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding-top: 80px;
+  gap: 4rem;
 }
 
 .face {
-   width: 30%;
-   margin: 5;
-   border-radius: 10px;
+  flex-shrink: 0;
+  width: 260px;
+}
+
+.face img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
 }
 
 .hero-eyebrow {
@@ -782,9 +793,27 @@ p:last-child { margin-bottom: 0; }
     text-align: center;
   }
 
+  .cols {
+    flex-direction: column;
+    padding-top: 96px;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .face {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hero-cta {
     flex-direction: column;
     gap: 0.75rem;
+    align-items: center;
   }
 
   .btn { text-align: center; }
