@@ -39,6 +39,7 @@ title: Home
         <li><span>Location</span> {{ site.author.location }}</li>
         <li><span>Email</span> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
         <li><span>GitHub</span> <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">github.com/{{ site.author.github }}</a></li>
+        {% if site.author.tiktok %}<li><span>TikTok</span> <a href="https://www.tiktok.com/@{{ site.author.tiktok }}" target="_blank" rel="noopener">@{{ site.author.tiktok }}</a></li>{% endif %}
       </ul>
     </div>
   </div>
@@ -207,6 +208,7 @@ title: Home
         {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
         {% if site.author.linkedin %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
         {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
+        {% if site.author.tiktok %}<a href="https://www.tiktok.com/@{{ site.author.tiktok }}" target="_blank" rel="noopener">TikTok</a>{% endif %}
       </div>
     </div>
   </div>
