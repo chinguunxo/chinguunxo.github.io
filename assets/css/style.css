@@ -149,13 +149,14 @@ p:last-child { margin-bottom: 0; }
 }
 
 .cols {
-   flex-direction: row;
+   flex-direction: cols;
    justify-content: center;
 }
 
 .face {
    width: 30%;
    margin: 5;
+   border-radius: 10px;
 }
 
 .hero-eyebrow {
