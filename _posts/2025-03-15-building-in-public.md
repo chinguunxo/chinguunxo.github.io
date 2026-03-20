@@ -2,7 +2,7 @@
 layout: post
 title: "On building things in public"
 subtitle: "Why sharing your work before it's ready is underrated."
-date: 2025-03-15
+date: 2026-03-20
 tags: [building, thoughts]
 ---
 
