@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "print('Hello World!')"
-subtitle: "A short note on why I'm starting this blog."
+subtitle: ""
 date: 2026-03-20
 tags: [personal]
 ---
