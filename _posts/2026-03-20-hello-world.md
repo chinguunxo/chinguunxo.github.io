@@ -14,7 +14,7 @@ Now, for those who are interested, let me *informally* introduce myself. My name
 
 Many people meet me and describe me as shy or timid, but my close friends think I’m funny, so I’ll call that a win. I can draw and paint with almost anything, but please never ask me to draw something.  
 
-I’ve been confused since 10th grade, and now I’m a 20-year-old college student *(a.k.a. a slightly less confused version of my 9th-grade self).* Along the way, I like to think I have **figured out** the following:
+I’ve been confused since 10th grade, and now I’m a 20-year-old college student *(a.k.a. a slightly less confused version of my 10th-grade self).* Along the way, I like to think I have **figured out** the following:
 
 ---
 
