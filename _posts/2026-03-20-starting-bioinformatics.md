@@ -17,5 +17,3 @@ Through this journey, I hope to demonstrate how much can be achieved through con
 *Best of luck!*
 
 ---
-
-# 
