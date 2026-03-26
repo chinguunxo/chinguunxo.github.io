@@ -12,5 +12,5 @@ The snippet from the post-olympic interview of the 19 yo Olympian Alysa Liu has 
 
 > 
 
-Up until March, I have been fed with the message that obsession is the key to success.
+Up until March, I had been fed the message that obsession is the key to success.
 
