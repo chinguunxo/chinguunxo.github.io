@@ -3,7 +3,7 @@ layout: post
 title: "100 days of Bioinformatics: Day 1 - The Beginning"
 subtitle: "Why I am starting this journey & reflection on thoughts and feelings."
 date: 2026-03-21
-tags: [building, thoughts]
+tags: [100 days of bioinformatics, thoughts]
 ---
 
 The rapid advancement of technology has generated an unprecedented volume of data, offering immense opportunities for analysis, discovery, and innovation. It is truly an exciting time to be a scientist!
