@@ -183,18 +183,38 @@ You can train your model in three *simple* steps:
 
 ```python
 # 1. create the dataset
-x = [[0,0],[1,1],[2,2]]
+X = [[0,0],[1,1],[2,2]]
 y = [0,1,2]
 # 2. Creating a linear model
 reg = lm.LinearRegression()
 print(reg)
 # 3. Train the model!
-reg.fit(x,y)
+reg.fit(X,y)
 ```
-You can check the parameters of your trained models using the following
+You can check the parameters of your trained models using the following:
 
 ```python
 reg.coef_
 reg.intercept_
 ```
 > You can also predict on a set nX of new points using reg.predict(nX) where nX is of dimension N′ × d with N ′representing the number of new points. - Again, the lab manual.
+
+Here is the simple exercise on model training:
+
+```python
+from sklearn import datasets
+X, y = datasets.load_diabetes(return_X_y=True)
+from sklearn.model_selection import train_test_split
+# Selects 30% random data points as test dataset
+# Remaining 70% are used in the training dataset
+# random_state controls the random selection, you can change the value
+train_x, test_x, train_y, test_y = train_test_split(X, y, test_size=0.3, random_state=99)
+reg.fit(train_x, train_y)
+reg.fit(X,y)
+from sklearn.metrics import mean_squared_error
+# Predict on test data
+y_pred = reg.predict(test_x)
+# Compute MSE
+mse = mean_squared_error(test_y, y_pred)
+print("Mean Squared Error:", mse)
+```
