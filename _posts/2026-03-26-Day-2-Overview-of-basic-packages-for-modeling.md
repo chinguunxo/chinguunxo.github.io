@@ -36,7 +36,7 @@ pip install numpy scikit-learn matplotlib
 As mentioned, `numpy` is used for numerical computations. The object to be manipulated will be called `ndarray` or `array`, which can be vectors, matrices, or higher-dimensional arrays. I hope you don't get `sleepy`!
 Moving on to the useful stuff :D :
 
-1. To create an array
+## 1. To create an array
 
 ```python
 a = np.array([2,1,3,4,6,3,1])
@@ -63,7 +63,7 @@ print(np.linspace(0,10,num=5))
 ```
 
 
-2. You can also set dimensions and size of your array:
+## 2. You can also set dimensions and size of your array:
 
 ```python
 print(m.ndim)
@@ -83,7 +83,7 @@ print(m2)
  [4 5]]
 ```
 
-3. Basic operations in numpy:
+## 3. Basic operations in numpy:
 
 ```python
 print(np.sort(a))
@@ -107,7 +107,7 @@ print(np.dot(m,m2))
 np.float64(11.875)
 ```
 
-4. Indexing
+## 4. Indexing
 
 ```python
 print(a[1])
