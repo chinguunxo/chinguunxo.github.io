@@ -280,4 +280,5 @@ The most important habit to develop is **critical awareness of your model's assu
 ---
 
 *Notes from STATS 202: Modeling and Predicting — Spring 2026, Duke Kunshan University.*
-*Lecture by Paul Weng. Based on course slides and Scott E. Page's* The Model Thinker.
+
+*Based on course slides and Scott E. Page's* The Model Thinker.
