@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "100 days of Bioinformatics: Day 4 - Uncertainty models -- Review"
+title: "100 days of Bioinformatics: Day 4 - Uncertainty models (Review)"
 subtitle: "Handling uncertainty with distribution models and their usage in bioinformatics."
 date: 2026-03-28
 tags: [100 days of bioinformatics]
@@ -9,26 +9,15 @@ tags: [100 days of bioinformatics]
 ## Probability distribution
 
 A probability distribution is a **rule** that assigns probabilities to all possible outcomes of a random experiment, in a way that satisfies the axioms of probability.
+- A probability distribution models **uncertainty** about events.  
+- It tells us how likely different outcomes of an experiment are.
 
 ### Formal idea
 
 - For a **discrete** random variable, a probability distribution specifies \(P(X = x)\) for every possible value \(x\), with each probability between 0 and 1 and all of them adding up to 1.  
 - For a **continuous** random variable, it is usually given by a *density function* \(f(x)\) such that probabilities of intervals are areas under \(f\), and the total area over all real numbers equals 1.  
 
-### Defining a probability distribution
-
-Here’s a compact, well-structured note based on your slide.
-
-***
-
-## 1. What is a probability distribution?
-
-- A probability distribution models **uncertainty** about events.  
-- It tells us how likely different outcomes of an experiment are.
-
-***
-
-## 2. Building a probability distribution
+### Defining and building a probability distribution
 
 To define a probability distribution, we need three ingredients:
 
