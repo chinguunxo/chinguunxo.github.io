@@ -166,17 +166,6 @@ Descriptive and diagnostic analytics focus on understanding, whereas predictive 
 
 ---
 
-#### Big picture
-
-- Independence describes when events or variables do not influence each other.  
-- Conditional independence describes when they stop influencing each other once some background information is known.  
-- Bayes’ theorem provides a principled way to update beliefs using new evidence.  
-- Random variables turn uncertain outcomes into numbers we can summarize with expectations and variances.  
-- Probability links theory with observed frequencies through the law of large numbers.  
-- Statistical models use these ideas to describe systems, estimate unknowns, make predictions, and drive decisions in data analytics.
-
----
-
 ### The REDCAPE Framework (Scott E. Page, *The Model Thinker*)
 
 | Letter | Purpose | Description |
@@ -331,3 +320,53 @@ The most important habit to develop is **critical awareness of your model's assu
 *Notes from STATS 202: Modeling and Predicting — Spring 2026, Duke Kunshan University.*
 
 *Based on course slides and Scott E. Page's* The Model Thinker.
+---
+
+## Applying REDCAPE to an RNA structure–prediction model (e.g., a deep model that predicts secondary structure from sequence):
+
+### R – Reason
+
+- Encodes assumptions about how base pairing, sequence context, and possibly thermodynamics determine RNA structure.  
+- Lets us reason about conditions under which certain motifs (stems, loops, pseudoknots) are likely, given sequence length, GC content, and conservation.
+
+***
+
+### E – Explain
+
+- Can help explain *why* certain RNAs adopt particular secondary structures: the model highlights base pairs and regions that are structurally decisive.  
+- By comparing predictions across mutants, it explains observed effects of point mutations or sequence motifs on folding stability.
+
+***
+
+### D – Design
+
+- Supports **rational design** of RNAs (therapeutic mRNAs, ribozymes, switches) by allowing “design–predict–edit” loops on candidate sequences.  
+- Can be embedded in optimization (e.g., search or RL) to design sequences that fold into target structures while satisfying other constraints (codon usage, motifs).
+
+***
+
+### C – Communicate
+
+- Provides a precise mathematical/algorithmic mapping from sequence to structure that others can inspect, rerun, and critique.  
+- Standardized outputs (dot–bracket notation, base‑pair probability matrices) create a common language for structural biologists, bioinformaticians, and designers.
+
+***
+
+### A – Act
+
+- Informs experimental **actions**: which constructs to synthesize, which mutations to test, which regions to probe experimentally first.  
+- In pharma/biotech, can guide go/no‑go decisions on RNA drug candidates based on predicted structural liabilities (e.g., unwanted hairpins, instabilities).
+
+***
+
+### P – Predict
+
+- Core use: predicts secondary (and sometimes tertiary) structure for new RNA sequences, including those without close structural homologs.  
+- Also predicts effects of variants: fold both wild‑type and mutant sequences to anticipate structural disruptions relevant for function or disease.
+
+***
+
+### E – Explore
+
+- Enables exploration of large hypothetical spaces: random mutagenesis, alternative splicing forms, or synthetic libraries, far beyond what labs can test directly.  
+- Lets researchers explore “what‑if” questions (e.g., “What structures are reachable under single‑nucleotide changes?”) and map neutral networks in sequence–structure space.
