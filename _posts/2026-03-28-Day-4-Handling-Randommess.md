@@ -269,6 +269,7 @@ A practical consequence is that in an i.i.d. setting, observed frequencies tend 
 
 For a fair coin, the probability of heads is \(1/2\) and the probability of tails is \(1/2\). If we flip the coin many times, the observed fraction of heads should get closer and closer to \(1/2\), even though short runs can still look uneven. 
 This also helps explain the difference between physical randomness and limited information. If the coin has already been flipped but you have not seen the outcome yet, the uncertainty is about your knowledge, even though probability may still be used to describe it. 
+
 ## Conclusion
 
 Probability is a fundamental tool for modeling uncertain situations. It gives us a probability space, rules for combining events, ways to define random variables, and methods for updating beliefs from evidence. 

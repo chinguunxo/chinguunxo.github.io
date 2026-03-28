@@ -19,6 +19,7 @@ highlighter: rouge
 
 kramdown:
   input: GFM
+  math_engine: mathjax
 
 plugins:
   - jekyll-feed
