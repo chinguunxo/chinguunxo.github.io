@@ -118,6 +118,63 @@ A famous example is **Schelling's model of segregation**: even when each individ
 
 Different fields emphasize different uses. Here's a synthesis across statistics, data analytics, and general modeling.
 
+1. **Description**
+
+   - Summarize and clarify relationships between variables.
+   - Example: an economic model describing the link between unemployment and GDP.
+
+2. **Estimation**
+
+   - Estimate unknown parameters or effects.
+   - Example: a house-price model estimating how price depends on area or location.
+
+3. **Prediction**
+
+   - Forecast future or unseen values.
+   - Example: a recommender system predicting whether a user will click an item.
+
+4. **Decision-making**
+
+   - Support or automate choices by connecting predictions with utilities or costs.
+   - Example: a model of unemployment helping policymakers choose between interventions.
+
+These purposes can overlap; a single model may describe, estimate, predict, and support decisions at the same time.
+
+---
+
+### Modeling in data analytics
+
+Analytics tasks are often grouped into four levels:
+
+1. **Descriptive analytics — “What happened?”**
+
+   - Summarizes past data with tables, plots, and simple models.
+
+2. **Diagnostic analytics — “Why did it happen?”**
+
+   - Investigates causes or drivers using correlations, regression, and causal analysis.
+
+3. **Predictive analytics — “What will happen?”**
+
+   - Uses statistical or machine-learning models to forecast future outcomes.
+
+4. **Prescriptive analytics — “What should I do?”**
+
+   - Combines predictions with optimization or rules to recommend or automate actions.
+
+Descriptive and diagnostic analytics focus on understanding, whereas predictive and prescriptive analytics move closer to concrete decisions and actions.
+
+---
+
+#### Big picture
+
+- Independence describes when events or variables do not influence each other.  
+- Conditional independence describes when they stop influencing each other once some background information is known.  
+- Bayes’ theorem provides a principled way to update beliefs using new evidence.  
+- Random variables turn uncertain outcomes into numbers we can summarize with expectations and variances.  
+- Probability links theory with observed frequencies through the law of large numbers.  
+- Statistical models use these ideas to describe systems, estimate unknowns, make predictions, and drive decisions in data analytics.
+
 ---
 
 ### The REDCAPE Framework (Scott E. Page, *The Model Thinker*)
