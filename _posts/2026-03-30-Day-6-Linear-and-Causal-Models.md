@@ -2,7 +2,7 @@
 layout: post
 title: "100 days of Bioinformatics: Day 6 - Linear and Causal Models"
 subtitle: "Why the Simplest Things Are Secretly Powerful"
-date: 2026-03-29
+date: 2026-03-28
 tags: [100 days of bioinformatics]
 ---
 
