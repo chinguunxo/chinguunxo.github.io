@@ -6,14 +6,6 @@ date: 2026-03-28
 tags: [100 days of bioinformatics]
 ---
 
-> *"All models are wrong, but some are useful."*
-> — George E.P. Box
-
-> *"The map is not the territory."*
-> — Alfred Korzybski
-
----
-
 ## Table of Contents
 
 1. [Why Do We Use Models?](#why-do-we-use-models)
