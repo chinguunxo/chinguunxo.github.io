@@ -14,6 +14,7 @@ tags: [100 days of bioinformatics]
 4. [How to Construct a Model?](#how-to-construct-a-model)
 5. [Conclusion](#conclusion)
 6. [Applying REDCAPE framework on RNA structure prediction model](#Applying-REDCAPE-to-an-RNA-structure–prediction-model)
+
 ---
 
 ## Why Do We Use Models?
