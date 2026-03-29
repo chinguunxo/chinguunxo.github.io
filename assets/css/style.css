@@ -360,121 +360,21 @@ p:last-child { margin-bottom: 0; }
 /* ───────────────────────────────────────────────────────
    SKILLS
 ─────────────────────────────────────────────────────── */
-.skills-category {
-  margin-bottom: 2.5rem;
-}
-
-.skills-category-title {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  font-weight: 400;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.course-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.course-card {
-  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
-  border-left: 2px solid var(--accent-warm);
-  border-bottom: 1px solid var(--border);
-  background: var(--bg);
-  transition: border-left-color 0.2s, background 0.2s;
-}
-.course-card:first-child { border-top: 1px solid var(--border); }
-.course-card:hover {
-  border-left-color: var(--accent);
-  background: var(--bg-alt);
-}
-
-.course-header {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.course-code {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  text-transform: uppercase;
-  flex-shrink: 0;
-}
-
-.course-name {
-  font-size: 0.9rem;
-  color: var(--text);
-  font-family: var(--font-serif);
-}
-
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+  margin-top: 0.6rem;
 }
 
 .skill-tags span {
   font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  padding: 0.2rem 0.65rem;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.6rem;
   background: var(--bg-alt);
   border: 1px solid var(--border);
   color: var(--text-muted);
-  border-radius: 20px;
-}
-
-/* Proficiency summary */
-.proficiency-summary {
-  margin-top: 2.5rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.proficiency-label {
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
-.proficiency-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
-.proficiency-tags span {
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
-  padding: 0.3rem 0.8rem;
-  border: 1px solid var(--border);
   border-radius: 2px;
-  color: var(--text-muted);
-  background: transparent;
-}
-
-.proficiency-tags.proficiency-primary span {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--bg);
-  font-weight: 400;
 }
 
 /* ───────────────────────────────────────────────────────
@@ -881,14 +781,6 @@ p:last-child { margin-bottom: 0; }
 
   .btn { text-align: center; }
 
-  .course-header {
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-
-  .proficiency-summary {
-    gap: 1rem;
-  }
 }
 
 @media (max-width: 480px) {
