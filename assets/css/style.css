@@ -458,6 +458,7 @@ p:last-child { margin-bottom: 0; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+  border-radius: 20px;
 }
 
 .proficiency-tags span {
@@ -888,8 +889,9 @@ p:last-child { margin-bottom: 0; }
 
   .proficiency-summary {
     gap: 1rem;
-  }
+   }
 }
+
 
 @media (max-width: 480px) {
   :root { --section-gap: 4rem; }
