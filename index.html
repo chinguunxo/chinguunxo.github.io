@@ -3,6 +3,10 @@ layout: default
 title: Home
 ---
 
+<video class="bg-video" loop muted autoplay playsinline>
+  <source src="{{ '/assets/background.webm' | relative_url }}" type="video/webm" />
+</video>
+
 <!-- ═══════════ HERO ═══════════ -->
 <section class="hero" id="home">
   <div class="cols">
@@ -29,16 +33,23 @@ title: Home
     </div>
     <div class="section-content">
       <h2>A bit about me</h2>
-      <p class="lead">
-        {{ site.author.bio }}
-      </p>
+      <p class="lead">{{ site.author.bio }}</p>
       <p>
-        I'm based in {{ site.author.location }}. I write about the things I build, learn, and find interesting — you can find those in my <a href="/blog">blog</a>.
+        I'm based in {{ site.author.location }}. I write about the things I
+        build, learn, and find interesting — you can find those in my
+        <a href="/blog">blog</a>.
       </p>
       <ul class="about-details">
         <li><span>Location</span> {{ site.author.location }}</li>
-        <li><span>Email</span> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-        <li><span>GitHub</span> <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">github.com/{{ site.author.github }}</a></li>
+        <li>
+          <span>Email</span>
+          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        </li>
+        <li>
+          <span>GitHub</span>
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">github.com/{{
+            site.author.github }}</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -58,33 +69,49 @@ title: Home
           <div class="timeline-header">
             <div>
               <h3>Student researcher</h3>
-              <p class="timeline-org">RNA Biology Group, Duke Kunshan University</p>
+              <p class="timeline-org">
+                RNA Biology Group, Duke Kunshan University
+              </p>
             </div>
             <span class="timeline-date">2026 — Present</span>
           </div>
-          <p>Research on RNA secondary structure and its role in drug resistance on ovarian cancer cell model.</p>
+          <p>
+            Research on RNA secondary structure and its role in drug resistance
+            on ovarian cancer cell model.
+          </p>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-header">
             <div>
               <h3>Student worker</h3>
-              <p class="timeline-org">International Enrolment Management, Duke Kunshan University</p>
+              <p class="timeline-org">
+                International Enrolment Management, Duke Kunshan University
+              </p>
             </div>
             <span class="timeline-date">2025 — 2026</span>
           </div>
-          <p>Collaborated with IEM staff and student team to develop and execute initiatives that enhance prospective student engagement and outreach effectiveness.</p>
+          <p>
+            Collaborated with IEM staff and student team to develop and execute
+            initiatives that enhance prospective student engagement and outreach
+            effectiveness.
+          </p>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-header">
             <div>
               <h3>Student researcher</h3>
-              <p class="timeline-org">Environmental Plant Epigenetics Lab, Duke Kunshan University</p>
+              <p class="timeline-org">
+                Environmental Plant Epigenetics Lab, Duke Kunshan University
+              </p>
             </div>
             <span class="timeline-date">2025 — 2025</span>
           </div>
-          <p>Phenotypic screening of samples under various levels of high-light stress conditions.</p>
+          <p>
+            Phenotypic screening of samples under various levels of high-light
+            stress conditions.
+          </p>
         </div>
       </div>
 
@@ -112,12 +139,14 @@ title: Home
     </div>
     <div class="section-content">
       <h2>Skills &amp; Training</h2>
-      <p class="lead">Hands-on laboratory and computational skills developed through coursework and research.</p>
+      <p class="lead">
+        Hands-on laboratory and computational skills developed through
+        coursework and research.
+      </p>
 
       <div class="skills-category">
         <h3 class="skills-category-title">Laboratory Techniques</h3>
         <div class="course-cards">
-
           <div class="course-card">
             <div class="course-header">
               <span class="course-code">BIOL 201</span>
@@ -153,14 +182,12 @@ title: Home
               <span>RNA Immunoprecipitation</span>
             </div>
           </div>
-
         </div>
       </div>
 
       <div class="skills-category">
         <h3 class="skills-category-title">Computational &amp; Data Skills</h3>
         <div class="course-cards">
-
           <div class="course-card">
             <div class="course-header">
               <span class="course-code">STATS 101</span>
@@ -186,7 +213,6 @@ title: Home
               <span>scikit-learn</span>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -217,7 +243,6 @@ title: Home
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -258,17 +283,17 @@ title: Home
     </div>
     <div class="section-content">
       <h2>Get in touch</h2>
-      <p class="lead">
-        Would love to hear from you!
-      </p>
+      <p class="lead">Would love to hear from you!</p>
       <a href="mailto:{{ site.author.email }}" class="btn btn-primary email-btn">
         {{ site.author.email }}
       </a>
       <div class="social-links">
-        {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
-        {% if site.author.linkedin %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
-        {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
-        {% if site.author.tiktok %}<a href="https://www.tiktok.com/@{{ site.author.tiktok }}" target="_blank" rel="noopener">TikTok</a>{% endif %}
+        {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank"
+          rel="noopener">GitHub</a>{% endif %} {% if site.author.linkedin %}<a
+          href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif
+        %} {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"
+          rel="noopener">Twitter</a>{% endif %} {% if site.author.tiktok %}<a
+          href="https://www.tiktok.com/@{{ site.author.tiktok }}" target="_blank" rel="noopener">TikTok</a>{% endif %}
       </div>
     </div>
   </div>
