@@ -2,7 +2,7 @@
 layout: post
 title: "100 days of Bioinformatics: Day 4 - Uncertainty models (Review)"
 subtitle: "Handling uncertainty with distribution models and their usage in bioinformatics."
-date: 2026-03-28
+date: 2026-03-25
 tags: [100 days of bioinformatics]
 ---
 
