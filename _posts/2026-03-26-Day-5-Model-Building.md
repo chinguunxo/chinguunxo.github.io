@@ -2,7 +2,7 @@
 layout: post
 title: "100 days of Bioinformatics: Day 5 - Model building"
 subtitle: "What are models and how to build them?"
-date: 2026-03-28
+date: 2026-03-26
 tags: [100 days of bioinformatics]
 ---
 
