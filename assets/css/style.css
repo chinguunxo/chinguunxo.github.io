@@ -63,8 +63,8 @@ img {
 	object-fit: cover;
 	mix-blend-mode: multiply;
 	pointer-events: none;
-	z-index: 1;
-	opacity: 0.01;
+	z-index: 0;
+	opacity: 0.04;
 }
 
 /* ───────────────────────────────────────────────────────
