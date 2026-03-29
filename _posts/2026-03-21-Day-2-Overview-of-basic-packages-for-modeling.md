@@ -2,7 +2,7 @@
 layout: post
 title: "100 days of Bioinformatics: Day 2 - Overview of Basic Python Packages for Modeling"
 subtitle: "Python packages: numpy, matplotlib, and scikit-learn."
-date: 2026-03-26
+date: 2026-03-21
 tags: [100 days of bioinformatics, python]
 ---
 
