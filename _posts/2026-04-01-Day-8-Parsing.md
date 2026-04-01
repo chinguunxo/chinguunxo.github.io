@@ -6,7 +6,14 @@ date: 2026-04-01
 tags: [100 days of bioinformatics]
 ---
 
+## `re` is a built-in Python module used for regular expressions.
 
+re = **"regular expression"**
+It lets you search, match, and manipulate text patterns. Think of it as a powerful text-cleaning and pattern-finding tool, which is why it’s super common in:
+
+- Bioinformatics (cleaning sequences)
+- Data processing
+- Log/file parsing
 
 ```python
 
