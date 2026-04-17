@@ -51,23 +51,6 @@ img {
 }
 
 /* ───────────────────────────────────────────────────────
-   BACKGROUND VIDEO
-─────────────────────────────────────────────────────── */
-.bg-video {
-	position: fixed;
-	top: 0;
-	left: 0;
-	padding: 50px;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	mix-blend-mode: multiply;
-	pointer-events: none;
-	z-index: 0;
-	opacity: 0.04;
-}
-
-/* ───────────────────────────────────────────────────────
    TYPOGRAPHY
 ─────────────────────────────────────────────────────── */
 h1,
