@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[started] Reflecting on the trending `Alysa Liu Mindset`"
+title: "I keep hearing this `Alysa Liu Mindset`"
 subtitle: "Should we be obsessed or enjoy the process for success?"
 date: 2026-03-26
 tags: [thoughts]
