@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "[started] Making High-Yield Anki Flashcards"
-date: 2026-03-24
+title: "[note-to-self] Making High-Yield Anki Flashcards"
 tags: [study tips]
 ---
 
