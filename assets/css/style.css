@@ -2,13 +2,13 @@
    VARIABLES & RESET
 ─────────────────────────────────────────────────────── */
 :root {
-	--bg: #f2f7f0;
-	--bg-alt: #e4f0df;
-	--text: #142414;
-	--text-muted: #4a6e4a;
+	--bg: #0a1a0a;
+	--bg-alt: #0f250f;
+	--text: #ffffff;
+	--text-muted: #a8d4b0;
 	--accent: #2d6e3a;
-	--accent-warm: #a8d4b0;
-	--border: #b8d4b4;
+	--accent-warm: #4a9c5a;
+	--border: #1a3a1a;
 	--font-serif: "Lora", Georgia, serif;
 	--font-sans: "Jost", system-ui, sans-serif;
 	--max-w: 1100px;
@@ -48,9 +48,9 @@ body::before {
 	right: 0;
 	bottom: 0;
 	background: 
-		radial-gradient(circle at 20% 30%, rgba(45, 110, 58, 0.08) 0%, transparent 40%),
-		radial-gradient(circle at 80% 70%, rgba(168, 212, 176, 0.12) 0%, transparent 45%),
-		radial-gradient(circle at 40% 80%, rgba(45, 110, 58, 0.06) 0%, transparent 35%);
+		radial-gradient(circle at 20% 30%, rgba(45, 110, 58, 0.15) 0%, transparent 40%),
+		radial-gradient(circle at 80% 70%, rgba(74, 156, 90, 0.12) 0%, transparent 45%),
+		radial-gradient(circle at 40% 80%, rgba(45, 110, 58, 0.1) 0%, transparent 35%);
 	z-index: -1;
 	pointer-events: none;
 }
@@ -59,7 +59,7 @@ body::before {
 .decorative-shape {
 	position: absolute;
 	border-radius: 50%;
-	opacity: 0.4;
+	opacity: 0.3;
 	z-index: 0;
 	pointer-events: none;
 }
@@ -80,7 +80,7 @@ body::before {
 	bottom: 20%;
 	left: 5%;
 	filter: blur(50px);
-	opacity: 0.25;
+	opacity: 0.2;
 }
 
 .decorative-shape.shape-3 {
@@ -90,7 +90,7 @@ body::before {
 	top: 45%;
 	left: 15%;
 	filter: blur(35px);
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 /* Pattern overlay */
@@ -105,38 +105,11 @@ body::before {
 			45deg,
 			transparent,
 			transparent 2px,
-			rgba(45, 110, 58, 0.02) 2px,
-			rgba(45, 110, 58, 0.02) 4px
+			rgba(45, 110, 58, 0.03) 2px,
+			rgba(45, 110, 58, 0.03) 4px
 		);
 	z-index: -1;
 	pointer-events: none;
-}
-
-/* Decorative images */
-.decorative-img {
-	position: absolute;
-	opacity: 0.15;
-	z-index: 0;
-	pointer-events: none;
-	filter: grayscale(30%) sepia(20%);
-}
-
-.decorative-img.img-dna {
-	width: 200px;
-	top: 20%;
-	right: 8%;
-}
-
-.decorative-img.img-cells {
-	width: 150px;
-	bottom: 25%;
-	right: 15%;
-}
-
-.decorative-img.img-microscope {
-	width: 120px;
-	top: 55%;
-	left: 8%;
 }
 
 a {
@@ -213,7 +186,7 @@ main {
 	height: 52px;
 	display: flex;
 	align-items: center;
-	background: rgba(248, 246, 241, 0.95);
+	background: rgba(10, 26, 10, 0.95);
 	backdrop-filter: blur(12px);
 	border-bottom: 1px solid transparent;
 	transition: border-color 0.3s;
@@ -383,23 +356,23 @@ main {
 }
 
 .btn-primary {
-	background: var(--text);
-	color: var(--bg);
+	background: #ffffff;
+	color: #0a1a0a;
 }
 
 .btn-primary:hover {
-	background: var(--accent);
-	color: var(--bg);
+	background: var(--accent-warm);
+	color: #ffffff;
 	text-decoration: none;
 }
 
 .btn-ghost {
 	border: 1px solid var(--border);
-	color: var(--text);
+	color: #ffffff;
 }
 
 .btn-ghost:hover {
-	border-color: var(--text);
+	border-color: #ffffff;
 	text-decoration: none;
 }
 
