@@ -24,11 +24,11 @@ After discussing it with a doctor, I decided to stop taking Visanne. We decided 
 
 Within a week of stopping, I noticed the depression leaving my body. I stopped obsessing over small things and finally felt relaxed. For the first time in a long while, I felt genuinely *happy*.  
 
-Period returned about a month after stopping the pill and the pain was intense. I needed more painkillers than I used to, and even then, they barely helped. The pain lasted for four days. I either had to miss classes or show up with a heating pad, unable to focus because of all of the brain fog. It took me nearly three weeks to fully catch up with my coursework. But in the end, it was not worth constantly anticipating when the next episode of severe pain would strike or scrambling to figure out how to manage it alone.  
+Period returned about a month after stopping the pill, and the pain was intense. I needed more painkillers than I used to, and even then, they barely helped. The pain lasted for four days. I either had to miss classes or show up with a heating pad, unable to focus because of all of the brain fog. It took me nearly three weeks to fully catch up with my coursework. But in the end, it was not worth constantly anticipating when the next episode of severe pain would strike or scrambling to figure out how to manage it alone.  
 
-During my last cycle, my period started right during my statistics final exam. The painkillers I took had no effect, and about an hour into the exam, I stopped feeling my hands as my whole body went numb due to the pain. I just rushed to finish the exam, because I knew I would not be able to answer any questions in any minute. After th exam, I asked my professor if I could retake the exam, explaining that "I was in a lot of pain". He responded, “Anyone could say that and ask to retake the exam,” and a hard "no.".  
+During my last cycle, my period started right during my statistics final exam. The painkillers I took had no effect, and about an hour into the exam, I stopped feeling my hands as my whole body went numb due to the pain. I just rushed to finish the exam, because I knew I would not be able to answer any questions for a minute. After the exam, I asked my professor if I could retake the exam, explaining that "I was in a lot of pain". He responded, “Anyone could say that and ask to retake the exam,” and a hard "no."  
 
-I was left crying—not just out of anger, but because I realized I might have to live with this for the rest of my life. It is sad to think of a life trying to awkwardly explain to someone why I could not finish an important project or miss a holiday becuase of my *period*. I hate how much taboo and stigmatized it is. Planning my life around my cycle felt nearly impossible as a college student studying abroad. So, I made the decision to go back on the pill.
+I was left crying—not just out of anger, but because I realized I might have to live with this for the rest of my life. It is sad to think of a life trying to awkwardly explain to someone why I could not finish an important project or miss a holiday because of my *period*. I hate how much taboo and stigmatized it is. Planning my life around my cycle felt nearly impossible as a college student studying abroad. So, I decided to go back on the pill.
 
 ## What I Hope for the Future
 
@@ -36,6 +36,12 @@ I hope for better treatment options—ones that do not force a choice between ph
 
 I hope for more understanding from people, especially in academic and professional environments, about what chronic pain conditions actually feel like.
 
+And most of all, I hope to one day live without having to choose between two kinds of suffering constantly. Until then, I will work hard towards contributing to its research as much as I can.
+
 *P.S. Also, on that final exam, I still passed with a good score*
 
-And most of all, I hope to one day live without having to constantly choose between two kinds of suffering. Until then I will work hard towards contributing to its research as much as I can.
+---
+
+*Update on June 20th, 2026*
+
+> Hi, after three weeks of retaking Visanne, the mental side effects came back. This time it was incredibly harder to focus on anything, and I had constant tiredness and dizziness, no matter how well I rested. Two options: stay on Visanne to stop adeno growth and take antidepressants and xanax or stop taking any medication. Again, every choice I make on this journey is incredibly difficult and scary for me. As a young person with a brain that is still developing, I choose to keep my mind safe. I am scared of hurting, but I am more scared of losing my sanity, personality, and drive in life.
