@@ -16,7 +16,7 @@ I read the pre-print paper on SEISMIC-RNA about two weeks ago. It is an updated/
 
 Please find the [installation manual here](https://rouskinlab.github.io/seismic-rna/install/index.html).
 
-As advised, using Bioconda was the best approach of all. (using uv faced dependency errors)
+As advised, using Bioconda was the best approach of all. (using uv faced dependency issues  )
 
 
 ## What SEISMIC-RNA does (refer to [seismic](https://rouskinlab.github.io/seismic-rna/works/index.html) for graphical illustration and explanation of the workflow)
@@ -63,7 +63,7 @@ seismic graph scatter "out/dms[12]/mask/rre/26-204/mask-position-table.csv"
 
 # Pool the replicates and process them together
 seismic pool -p dms-pool out/dms1 out/dms2
-seismic wf --mask-pos rre 176 -P rre GGAGCTTTGTTCCTTGGGTTCTTGG GGAGCTGTTGATCCTTTAGGTATCTTTC -k 2 --fold -q 0.95 hiv-rre.fa out/dms-pool```
+seismic wf --mask-pos rre 176 -P rre GGAGCTTTGTTCCTTGGGTTCTTGG GGAGCTGTTGATCCTTTAGGTATCTTTC -k 2 --fold -q 0.95 hiv-rre.fa out/dms-pool/idmut```
 
 - `fq` and the `.fa` files are within the un-tarred folder.
 
@@ -137,8 +137,28 @@ Later part:
 - `out/dms[12]/mask/rre/26-204/mask-position-table.csv` means graph data from these tables, where [12] is a glob pattern that is expanded by the shell into all files that match the pattern – which in this case is `out/dms1/mask/rre/26-204/filter-position-table.csv` `out/dms2/filter/rre/26-204/filter-position-table.csv`
 "
 
-Open `out/dms1__and__dms2/graph/rre/26-204/scatter_filtered_m-ratio-q0.html`.
+Open `out/dms1__and__dms2/graph/rre/26-204/scatter_masked_m-ratio-q0.html`. It will show Pearson correlation plot (For a general amplicon, ≥0.98 would be ideal, and ≥0.95 would be decent).
 
+#### Pooling and processing the two DMS-treated replicates together
+
+**Pool the two DMS-treated replicates**
+
+The correlation was high, which means it can be analyzed as a single sample. This is useful when a high coverage is necessary, eg. during clustering. combine using:
+
+```bash
+seismic  pool dms-pool out/dms[12]
+
+- `pool` -> combining samples in a new combined pool
+- `dms-pool` is the name for the poooled sample.
+- `out/dms[12]` is same as out/dms1 and 2.
+
+```
+
+**Process the pooled DMS-treated samples**
+
+```bash
+seismic -v wf --mask-pos rre 176 -P rre GGAGCTTTGTTCCTTGGGTTCTTGG GGAGCTGTTGATCCTTTAGGTATCTTTC -k 2 --fold --fold-quantile 0.95 hiv-rre.fa out/dms-pool/idmut
+```
 
 
 
