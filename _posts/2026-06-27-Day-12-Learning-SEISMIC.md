@@ -128,4 +128,4 @@ seismic wf fq/Regions_Ref.fa -x fq/ --regions-file fq/regions_file.csv --fold --
 
 Reference:
 
-Allan et al. (2024). Discovery and Quantification of Long-Range RNA Base Pairs in Coronavirus Genomes with SEARCH-MaP and SEISMIC-RNA. bioRxiv: https://doi.org/10.1101/2024.04.29.591762
+> Allan et al. (2024). Discovery and Quantification of Long-Range RNA Base Pairs in Coronavirus Genomes with SEARCH-MaP and SEISMIC-RNA. bioRxiv: https://doi.org/10.1101/2024.04.29.591762
