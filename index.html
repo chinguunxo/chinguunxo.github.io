@@ -12,20 +12,13 @@ title: Home
         <span class="hero-eyebrow-sub">Genetics &amp; Genomics @ Duke Kunshan</span>
       </div>
 
-      <h1 class="hero-headline">
-        Exploring <em>RNA.</em><br>
-        Building the future.
-      </h1>
-
-      <p class="hero-description">
-        I study lncRNA structure and function in ovarian cancer to understand
-        oncofetal reprogramming and chemoresistance — combining molecular biology
-        with computation and machine learning.
-      </p>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-headline">{{ site.title }}</h1>
+      <p class="hero-description">{{ site.description }}</p>
 
       <div class="hero-cta">
-        <a href="#about" class="btn btn-primary">Explore My Work</a>
-        <a href="mailto:{{ site.author.email }}" class="btn btn-ghost btn-arrow">View CV</a>
+        <a href="#about" class="btn btn-primary">About me</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
       </div>
 
       <div class="hero-features">
@@ -49,54 +42,8 @@ title: Home
 
     <div class="hero-right">
       <div class="hero-visual">
-        <!-- DNA helix SVG -->
-        <svg class="dna-helix" viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="dnaGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="var(--accent-light)" stop-opacity="0.6"/>
-              <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.3"/>
-            </linearGradient>
-            <linearGradient id="dnaGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="var(--accent-mid)" stop-opacity="0.5"/>
-              <stop offset="100%" stop-color="var(--accent-light)" stop-opacity="0.2"/>
-            </linearGradient>
-          </defs>
-          <!-- Strand 1 - left curve -->
-          <path d="M80 10 C60 50, 220 80, 200 120 C180 160, 60 180, 80 220 C100 260, 220 280, 200 320 C180 360, 60 380, 80 420" stroke="url(#dnaGrad1)" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <!-- Strand 2 - right curve -->
-          <path d="M220 10 C240 50, 80 80, 100 120 C120 160, 240 180, 220 220 C200 260, 80 280, 100 320 C120 360, 240 380, 220 420" stroke="url(#dnaGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <!-- Rungs -->
-          <line x1="90" y1="35" x2="210" y2="55" stroke="var(--accent-light)" stroke-width="1.5" opacity="0.5"/>
-          <line x1="100" y1="70" x2="200" y2="75" stroke="var(--accent-light)" stroke-width="1.5" opacity="0.6"/>
-          <line x1="115" y1="105" x2="185" y2="98" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
-          <line x1="130" y1="138" x2="168" y2="126" stroke="var(--accent-light)" stroke-width="1.5" opacity="0.4"/>
-          <line x1="140" y1="170" x2="158" y2="162" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
-          <line x1="130" y1="200" x2="168" y2="197" stroke="var(--accent-light)" stroke-width="1.5" opacity="0.6"/>
-          <line x1="115" y1="232" x2="185" y2="233" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
-          <line x1="100" y1="262" x2="200" y2="268" stroke="var(--accent-light)" stroke-width="1.5" opacity="0.4"/>
-          <line x1="90" y1="295" x2="210" y2="305" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
-          <line x1="100" y1="328" x2="200" y2="332" stroke="var(--accent-light)" stroke-width="1.5" opacity="0.6"/>
-          <line x1="115" y1="360" x2="185" y2="358" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
-          <line x1="130" y1="392" x2="168" y2="388" stroke="var(--accent-light)" stroke-width="1.5" opacity="0.4"/>
-          <!-- Node circles strand 1 -->
-          <circle cx="80" cy="10" r="5" fill="var(--accent-light)" opacity="0.7"/>
-          <circle cx="200" cy="120" r="4" fill="var(--accent)" opacity="0.6"/>
-          <circle cx="80" cy="220" r="5" fill="var(--accent-light)" opacity="0.7"/>
-          <circle cx="200" cy="320" r="4" fill="var(--accent)" opacity="0.6"/>
-          <!-- Node circles strand 2 -->
-          <circle cx="220" cy="10" r="5" fill="var(--accent)" opacity="0.6"/>
-          <circle cx="100" cy="120" r="4" fill="var(--accent-light)" opacity="0.7"/>
-          <circle cx="220" cy="220" r="5" fill="var(--accent)" opacity="0.6"/>
-          <circle cx="100" cy="320" r="4" fill="var(--accent-light)" opacity="0.7"/>
-        </svg>
-
-        <!-- Floating label card -->
-        <div class="hero-info-card">
-          <div class="info-card-dot"></div>
-          <div class="info-card-text">
-            <div class="info-card-title">lncRNA UCA1</div>
-            <div class="info-card-sub">Structure &amp; Function</div>
-          </div>
+        <div class="face">
+          <img src="/face.jpg" alt="Portrait of {{ site.author.name }}" />
         </div>
       </div>
     </div>
