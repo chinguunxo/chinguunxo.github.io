@@ -3,328 +3,177 @@ layout: default
 title: Home
 ---
 
-<!-- ═══════════ HERO ═══════════ -->
-<section class="hero" id="home">
-  <div class="hero-layout">
-    <div class="hero-left">
-      <div class="hero-eyebrow">
-        <span class="hero-eyebrow-top">Molecular Bioscience</span>
-        <span class="hero-eyebrow-sub">Genetics &amp; Genomics @ Duke Kunshan</span>
-      </div>
+<!-- ═══════════ INTRO ═══════════ -->
+<div class="page-wrap">
 
-      <p class="hero-greeting">Hello, I'm</p>
-      <h1 class="hero-headline">{{ site.title }}</h1>
-      <p class="hero-description">{{ site.description }}</p>
-
-      <div class="hero-cta">
-        <a href="#about" class="btn btn-primary">About me</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
-      </div>
-
-      <div class="hero-features">
-        <div class="feature-card">
-          <div class="feature-icon">🧬</div>
-          <div class="feature-label">RNA Biology</div>
-          <div class="feature-sublabel">Focus</div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔬</div>
-          <div class="feature-label">Genomics</div>
-          <div class="feature-sublabel">Foundation</div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💻</div>
-          <div class="feature-label">Computation</div>
-          <div class="feature-sublabel">&amp; ML</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="hero-visual">
-        <div class="face">
-          <img src="/face.jpg" alt="Portrait of {{ site.author.name }}" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="scroll-hint">
-    <span>Scroll to explore</span>
-    <div class="scroll-arrow"></div>
-  </div>
-</section>
-
-<!-- ═══════════ ABOUT ═══════════ -->
-<section class="section" id="about">
-  <div class="section-inner two-col">
-    <div class="section-label">
-      <span>01 — About</span>
-    </div>
-    <div class="section-content">
-      <h2>A bit about me</h2>
-      <p class="lead">{{ site.author.bio }}</p>
+  <section class="intro">
+    <div class="intro-text">
+      <h1 class="intro-name">Hi! My name is {{ site.author.name }}</h1>
       <p>
-        I'm based in {{ site.author.location }}. I write about the things I
-        build, learn, and find interesting — you can find those in my
-        <a href="/blog">blog</a>.
+        I'm an undergraduate student at
+        <a href="https://dukekunshan.edu.cn" target="_blank" rel="noopener">Duke Kunshan University</a>
+        majoring in Genetics and Genomics.
       </p>
-      <ul class="about-details">
-        <li><span>Location</span> {{ site.author.location }}</li>
-        <li>
-          <span>Email</span>
-          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-        </li>
-        <li>
-          <span>GitHub</span>
-          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">github.com/{{
-            site.author.github }}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ EXPERIENCE ═══════════ -->
-<section class="section section-alt" id="experience">
-  <div class="section-inner two-col">
-    <div class="section-label">
-      <span>02 — Experience</span>
-    </div>
-    <div class="section-content">
-      <h2>Where I've worked</h2>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3>Student researcher</h3>
-              <p class="timeline-org">
-                RNA Biology Group, Duke Kunshan University
-              </p>
-            </div>
-            <span class="timeline-date">2026 — Present</span>
-          </div>
-          <p>
-            Research on RNA secondary structure and its role in drug resistance
-            on ovarian cancer cell model.
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3>Student worker</h3>
-              <p class="timeline-org">
-                International Enrolment Management, Duke Kunshan University
-              </p>
-            </div>
-            <span class="timeline-date">2025 — 2026</span>
-          </div>
-          <p>
-            Collaborated with IEM staff and student team to develop and execute
-            initiatives that enhance prospective student engagement and outreach
-            effectiveness.
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3>Student researcher</h3>
-              <p class="timeline-org">
-                Environmental Plant Epigenetics Lab, Duke Kunshan University
-              </p>
-            </div>
-            <span class="timeline-date">2025 — 2025</span>
-          </div>
-          <p>
-            Phenotypic screening of samples under various levels of high-light
-            stress conditions.
-          </p>
-        </div>
-      </div>
-
-      <div class="education-block">
-        <h3>Education</h3>
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3>B.S. Molecular Biosciences, Genetics & Genomics</h3>
-              <p class="timeline-org">Duke Kunshan University</p>
-            </div>
-            <span class="timeline-date">2024 — 2028</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ SKILLS ═══════════ -->
-<section class="section" id="skills">
-  <div class="section-inner two-col">
-    <div class="section-label">
-      <span>03 — Skills</span>
-    </div>
-    <div class="section-content">
-      <h2>Skills &amp; Training</h2>
-      <p class="lead">
-        Hands-on laboratory and computational skills developed through
-        coursework and research.
+      <p>
+        I'm interested in RNA biology and epigenetics — particularly how non-coding RNAs
+        drive drug resistance in gynecologic cancers like ovarian cancer.
       </p>
-
-      <div class="skills-category">
-        <h3 class="skills-category-title">Laboratory Techniques</h3>
-        <div class="course-cards">
-          <div class="course-card">
-            <div class="course-header">
-              <span class="course-code">BIOL 201</span>
-              <span class="course-name">Cell and Molecular Biology</span>
-            </div>
-            <div class="skill-tags">
-              <span>Genotyping</span>
-              <span>Cell Transformation</span>
-              <span>Gel Electrophoresis</span>
-            </div>
-          </div>
-
-          <div class="course-card">
-            <div class="course-header">
-              <span class="course-code">BIOL 315</span>
-              <span class="course-name">Experimental Molecular Biology</span>
-            </div>
-            <div class="skill-tags">
-              <span>RT-qPCR</span>
-              <span>Primer Design</span>
-              <span>Western Blot</span>
-              <span>RNA Immunoprecipitation</span>
-              <span>Gel Electrophoresis</span>
-            </div>
-          </div>
-
-          <div class="course-card">
-            <div class="course-header">
-              <span class="course-code">BIOL 305</span>
-              <span class="course-name">Biochemistry</span>
-            </div>
-            <div class="skill-tags">
-              <span>RNA Immunoprecipitation</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skills-category">
-        <h3 class="skills-category-title">Computational &amp; Data Skills</h3>
-        <div class="course-cards">
-          <div class="course-card">
-            <div class="course-header">
-              <span class="course-code">STATS 101</span>
-              <span class="course-name">Introduction to Applied Statistical Methods</span>
-            </div>
-            <div class="skill-tags">
-              <span>R</span>
-              <span>Statistical Analysis</span>
-            </div>
-          </div>
-
-          <div class="course-card">
-            <div class="course-header">
-              <span class="course-code">STATS 202</span>
-              <span class="course-name">Modeling and Predicting</span>
-            </div>
-            <div class="skill-tags">
-              <span>Python</span>
-              <span>Jupyter Notebook</span>
-              <span>Model Building</span>
-              <span>Data Analysis</span>
-              <span>matplotlib</span>
-              <span>scikit-learn</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="proficiency-summary">
-        <div class="proficiency-group">
-          <h4 class="proficiency-label">Core Lab Techniques</h4>
-          <div class="proficiency-tags proficiency-primary">
-            <span>Primer Design</span>
-            <span>Bacterial Transformation</span>
-            <span>Western Blot</span>
-            <span>Genotyping</span>
-            <span>RT-qPCR</span>
-          </div>
-        </div>
-        <div class="proficiency-group">
-          <h4 class="proficiency-label">Programming &amp; Analysis</h4>
-          <div class="proficiency-tags proficiency-primary">
-            <span>Python</span>
-            <span>R</span>
-            <span>Jupyter Notebook</span>
-          </div>
-        </div>
-        <div class="proficiency-group">
-          <h4 class="proficiency-label">Web (Personal)</h4>
-          <div class="proficiency-tags">
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-        </div>
-      </div>
+      <p>
+        Outside the lab I write about what I'm learning, read about endocrinology,
+        and occasionally build things for the web.
+      </p>
+      <p>
+        Currently doing research on lncRNA secondary structure in the RNA Biology Group at DKU.
+      </p>
     </div>
+    <div class="intro-photo">
+      <img src="/face.jpg" alt="Photo of {{ site.author.name }}" />
+    </div>
+  </section>
+
+  <!-- Social pills -->
+  <div class="social-pills">
+    {% if site.author.github %}
+    <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" class="pill pill-github">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      GitHub
+    </a>
+    {% endif %}
+    {% if site.author.linkedin %}
+    <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" class="pill pill-linkedin">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      LinkedIn
+    </a>
+    {% endif %}
+    {% if site.author.tiktok %}
+    <a href="https://www.tiktok.com/@{{ site.author.tiktok }}" target="_blank" rel="noopener" class="pill pill-tiktok">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.15 8.15 0 004.77 1.52V6.75a4.85 4.85 0 01-1-.06z"/></svg>
+      TikTok
+    </a>
+    {% endif %}
+    <a href="mailto:{{ site.author.email }}" class="pill pill-email">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Email
+    </a>
   </div>
-</section>
 
-<!-- ═══════════ BLOG PREVIEW ═══════════ -->
-<section class="section section-alt" id="blog-preview">
-  <div class="section-inner two-col">
-    <div class="section-label">
-      <span>04 — Writing</span>
-    </div>
-    <div class="section-content">
-      <h2>Recent posts</h2>
-      <div class="blog-list">
-        {% for post in site.posts limit:4 %}
-        <a href="{{ post.url | relative_url }}" class="blog-list-item">
-          <div class="blog-list-title">{{ post.title }}</div>
-          <div class="blog-list-meta">
-            <span class="blog-list-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-            {% if post.tags.size > 0 %}<span class="blog-list-tag">{{ post.tags[0] }}</span>{% endif %}
-          </div>
-        </a>
-        {% else %}
-        <p class="empty-state">No posts yet — check back soon.</p>
-        {% endfor %}
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section class="compact-section" id="skills">
+    <h2 class="compact-heading">Skills &amp; Training</h2>
+    <div class="tool-cards">
+
+      <div class="tool-card">
+        <div class="tool-name">
+          <span class="tool-icon">🧫</span> Lab Techniques
+        </div>
+        <div class="tool-tags">
+          <span>RT-qPCR</span>
+          <span>Primer Design</span>
+          <span>Western Blot</span>
+          <span>RNA Immunoprecipitation</span>
+          <span>Gel Electrophoresis</span>
+          <span>Cell Transformation</span>
+          <span>Genotyping</span>
+        </div>
       </div>
-      {% if site.posts.size > 4 %}
-      <a href="{{ '/blog' | relative_url }}" class="see-all-link">See all posts →</a>
-      {% endif %}
-    </div>
-  </div>
-</section>
 
-<!-- ═══════════ CONTACT ═══════════ -->
-<section class="section" id="contact">
-  <div class="section-inner two-col">
-    <div class="section-label">
-      <span>05 — Contact</span>
+      <div class="tool-card">
+        <div class="tool-name">
+          <span class="tool-icon">🐍</span> Python
+        </div>
+        <div class="tool-tags">
+          <span>Jupyter Notebook</span>
+          <span>scikit-learn</span>
+          <span>matplotlib</span>
+          <span>NumPy</span>
+          <span>Pandas</span>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-name">
+          <span class="tool-icon">📊</span> R
+        </div>
+        <div class="tool-tags">
+          <span>Statistical Analysis</span>
+          <span>Data Visualisation</span>
+          <span>Model Building</span>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-name">
+          <span class="tool-icon">🌐</span> Web
+        </div>
+        <div class="tool-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Jekyll</span>
+        </div>
+      </div>
+
     </div>
-    <div class="section-content">
-      <h2>Get in touch</h2>
-      <p class="lead">Would love to hear from you!</p>
-      <a href="mailto:{{ site.author.email }}" class="btn btn-primary email-btn">
-        {{ site.author.email }}
+  </section>
+
+  <!-- ═══════════ EXPERIENCE ═══════════ -->
+  <section class="compact-section" id="experience">
+    <h2 class="compact-heading">Experience</h2>
+    <div class="compact-timeline">
+
+      <div class="ct-item">
+        <div class="ct-left">
+          <div class="ct-title">Student Researcher</div>
+          <div class="ct-org">RNA Biology Group, Duke Kunshan University</div>
+        </div>
+        <span class="ct-date">2026 — Present</span>
+      </div>
+
+      <div class="ct-item">
+        <div class="ct-left">
+          <div class="ct-title">Student Worker</div>
+          <div class="ct-org">International Enrolment Management, DKU</div>
+        </div>
+        <span class="ct-date">2025 — 2026</span>
+      </div>
+
+      <div class="ct-item">
+        <div class="ct-left">
+          <div class="ct-title">Student Researcher</div>
+          <div class="ct-org">Environmental Plant Epigenetics Lab, DKU</div>
+        </div>
+        <span class="ct-date">2025</span>
+      </div>
+
+      <div class="ct-item">
+        <div class="ct-left">
+          <div class="ct-title">B.S. Molecular Biosciences — Genetics &amp; Genomics</div>
+          <div class="ct-org">Duke Kunshan University</div>
+        </div>
+        <span class="ct-date">2024 — 2028</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ WRITING ═══════════ -->
+  <section class="compact-section" id="writing">
+    <h2 class="compact-heading">Recent Writing</h2>
+    <div class="blog-list">
+      {% for post in site.posts limit:4 %}
+      <a href="{{ post.url | relative_url }}" class="blog-list-item">
+        <div class="blog-list-title">{{ post.title }}</div>
+        <div class="blog-list-meta">
+          <span class="blog-list-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
       </a>
-      <div class="social-links">
-        {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank"
-          rel="noopener">GitHub</a>{% endif %} {% if site.author.linkedin %}<a
-          href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif
-        %} {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"
-          rel="noopener">Twitter</a>{% endif %} {% if site.author.tiktok %}<a
-          href="https://www.tiktok.com/@{{ site.author.tiktok }}" target="_blank" rel="noopener">TikTok</a>{% endif %}
-      </div>
+      {% else %}
+      <p class="empty-state">No posts yet — check back soon.</p>
+      {% endfor %}
     </div>
-  </div>
-</section>
+    {% if site.posts.size > 4 %}
+    <a href="{{ '/blog' | relative_url }}" class="see-all-link">See all posts →</a>
+    {% endif %}
+  </section>
+
+</div>
