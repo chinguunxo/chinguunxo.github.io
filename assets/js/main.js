@@ -7,16 +7,25 @@ window.addEventListener('scroll', () => {
 // Mobile nav toggle
 const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
-
 toggle?.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
-
-// Close mobile nav on link click
 navLinks?.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-  });
+  link.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+// Dark / light mode toggle
+const themeToggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+
+function setTheme(theme) {
+  html.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+}
+
+themeToggle?.addEventListener('click', () => {
+  const current = html.getAttribute('data-theme');
+  setTheme(current === 'dark' ? 'light' : 'dark');
 });
 
 // Smooth scroll for anchor links

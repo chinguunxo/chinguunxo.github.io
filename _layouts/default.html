@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +17,17 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Apply saved theme before paint to avoid flash -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+      else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
+
   <script>
     window.MathJax = {
       tex: {
@@ -26,22 +37,27 @@
     };
   </script>
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 </head>
 <body>
   <header class="site-header">
     <nav class="nav-inner">
-      <a href="{{ '/' | relative_url }}" class="nav-logo">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}" class="nav-logo">chinguunxo</a>
       <ul class="nav-links">
         <li><a href="{{ '/#about' | relative_url }}">About</a></li>
-        <li><a href="{{ '/#experience' | relative_url }}">Experience</a></li>
+        <li><a href="{{ '/#experience' | relative_url }}">Research</a></li>
         <li><a href="{{ '/#skills' | relative_url }}">Skills</a></li>
         <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
         <li><a href="{{ '/#contact' | relative_url }}">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span>
-      </button>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="icon-moon">☽</span>
+          <span class="icon-sun">☀</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -55,7 +71,7 @@
       <div class="footer-links">
         {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
         {% if site.author.linkedin %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
-        {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
+        {% if site.author.tiktok %}<a href="https://www.tiktok.com/@{{ site.author.tiktok }}" target="_blank" rel="noopener">TikTok</a>{% endif %}
       </div>
     </div>
   </footer>
