@@ -82,7 +82,7 @@ You can compare the correlation of each cluster using:
 seismic graph corroll /out/sim_clustering_ref/cluster/sim_clustering_ref/full/cluster-position-table.csv --compself
 ```
 
-# SEISMIC-RNA Tutorial 4: [Running multiple samples at once](https://rouskinlab.github.io/seismic-rna/tutorials/clustering/index.html#tutorial-3-clustering](https://rouskinlab.github.io/seismic-rna/tutorials/multi-sample/index.html#tutorial-4-running-multiple-samples-at-once)
+# SEISMIC-RNA Tutorial 4: [Running multiple samples at once](https://rouskinlab.github.io/seismic-rna/tutorials/multi-sample/index.html#tutorial-4-running-multiple-samples-at-once)
 
 > Includes instructions to analyze multiple samples in only one command using the SEISMIC-RNA workflow.
 
