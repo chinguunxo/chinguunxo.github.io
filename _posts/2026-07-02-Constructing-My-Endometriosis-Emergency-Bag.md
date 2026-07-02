@@ -3,7 +3,7 @@ layout: post
 title: "Constructing my endometriosis emergency bag!"
 subtitle: "What's in my bag with a twist!"
 date: 2026-07-02
-tags: [adenomyosis, endometriosis
+tags: [adenomyosis, endometriosis]
 ---
 
 At some point in your **endo-career**, you will need a way to manage sudden pain in any place. These are what I am putting in my bag:
