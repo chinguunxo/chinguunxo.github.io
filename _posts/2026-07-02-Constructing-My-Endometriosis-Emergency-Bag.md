@@ -3,10 +3,10 @@ layout: post
 title: "Constructing my endometriosis emergency bag!"
 subtitle: "What's in my bag with a twist!"
 date: 2026-07-02
-tags: [100 days of bioinformatics]
+tags: [adenomyosis, endometriosis
 ---
 
-At some certain time and point in your **endo-career**, you will need a way to manage sudden pain in any place. These are what I am putting in my bag:
+At some point in your **endo-career**, you will need a way to manage sudden pain in any place. These are what I am putting in my bag:
 
 > - ***Pain relief medications***: Personally, I use **ibuprofen**; it's the fastest-acting pain reliever -- besides ibuprofen, I have tried paracetamol, but it doesn't really do anything for the pain. The brand of the ibuprofen matters a lot, as I come to learn (Russian ibuprofen > Bayer's for me).
 > - ***FOOD***: This is a tricky one, if you become the biggest picky-eater like me. If you don't want stomach pain alongside your period cramps, you'd better eat something meaty before taking the pill. Please eat what you crave to avoid vomiting later.
