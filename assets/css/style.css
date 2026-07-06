@@ -502,6 +502,17 @@ p:last-child { margin-bottom: 0; }
 	margin: 1.5rem 0;
 }
 .post-body pre code { background: none; border: none; padding: 0; font-size: 0.875rem; color: inherit; }
+.post-body .mermaid {
+	display: flex;
+	justify-content: center;
+	overflow-x: auto;
+	margin: 1.5rem 0;
+	padding: 1rem;
+	background: var(--bg-alt);
+	border: 1px solid var(--border);
+	border-radius: 6px;
+}
+.post-body .mermaid svg { max-width: 100%; height: auto; }
 .post-body img { width: 100%; border-radius: 6px; margin: 1.5rem 0; }
 .post-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 .post-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }

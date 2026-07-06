@@ -28,6 +28,33 @@ themeToggle?.addEventListener('click', () => {
   setTheme(current === 'dark' ? 'light' : 'dark');
 });
 
+// Mermaid diagram rendering (turns ```mermaid fenced code blocks into diagrams)
+if (window.mermaid) {
+  const diagrams = Array.from(document.querySelectorAll('pre > code.language-mermaid')).map(code => {
+    const div = document.createElement('div');
+    div.className = 'mermaid';
+    div.dataset.mermaidSrc = code.textContent;
+    code.parentElement.replaceWith(div);
+    return div;
+  });
+
+  const renderMermaid = () => {
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: html.getAttribute('data-theme') === 'dark' ? 'dark' : 'default',
+      securityLevel: 'strict',
+    });
+    diagrams.forEach(div => {
+      div.removeAttribute('data-processed');
+      div.innerHTML = div.dataset.mermaidSrc;
+    });
+    mermaid.run({ nodes: diagrams });
+  };
+
+  renderMermaid();
+  themeToggle?.addEventListener('click', renderMermaid);
+}
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
