@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "100 days of Bioinformatics: Day 17 - Basics of Model Learning"
+title: "100 days of Bioinformatics: Day 17-18 - Basics of Model Learning"
 subtitle: "Learning via Gradient Descent, Optimizin, Validating and Testing!"
 date: 2026-07-06
 tags: [100 days of bioinformatics]
