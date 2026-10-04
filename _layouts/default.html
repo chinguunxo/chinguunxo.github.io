@@ -48,7 +48,6 @@
       <ul class="nav-links">
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
         <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
-        <li><a href="{{ '/wishlist' | relative_url }}">Wishlist</a></li>
         <li><a href="{{ '/#experience' | relative_url }}">Experience</a></li>
         <li><a href="{{ '/#skills' | relative_url }}">Skills</a></li>
       </ul>
@@ -74,6 +73,7 @@
       <div class="footer-links">
         {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
         {% if site.author.linkedin %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+        <a href="{{ '/wishlist' | relative_url }}">Wishlist ✦</a>
       </div>
     </div>
   </footer>

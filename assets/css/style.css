@@ -522,43 +522,6 @@ p:last-child { margin-bottom: 0; }
 	background: var(--bg-alt);
 }
 .post-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
-/* ───────────────────────────────────────────────────────
-   WISHLIST TEASER (homepage)
-─────────────────────────────────────────────────────── */
-.wishlist-teaser {
-	position: relative;
-	display: block;
-	border-radius: var(--radius);
-	overflow: hidden;
-	border: 1px solid var(--border);
-	rotate: -0.6deg;
-	transition: rotate 0.4s cubic-bezier(.34, 1.56, .64, 1), transform 0.4s cubic-bezier(.34, 1.56, .64, 1), box-shadow 0.3s;
-}
-.wishlist-teaser img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; transition: transform 0.6s ease; }
-.wishlist-teaser:hover {
-	text-decoration: none;
-	rotate: 0.6deg;
-	transform: translateY(-3px);
-	box-shadow: 0 14px 30px rgba(26, 58, 92, 0.18);
-}
-.wishlist-teaser:hover img { transform: scale(1.04); }
-.wishlist-teaser-tag {
-	position: absolute;
-	right: 1rem;
-	bottom: 1rem;
-	padding: 0.25rem 0.85rem;
-	background: #efe2c4;
-	color: #a52226;
-	font-family: var(--font-serif);
-	font-style: italic;
-	font-size: 0.95rem;
-	rotate: -3deg;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
-}
-@media (prefers-reduced-motion: reduce) {
-	.wishlist-teaser, .wishlist-teaser img { transition: none; }
-}
-
 .post-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
 
 /* ───────────────────────────────────────────────────────
