@@ -17,6 +17,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% for css in page.extra_css %}
+  <link rel="stylesheet" href="{% if css contains '://' %}{{ css }}{% else %}{{ css | relative_url }}{% endif %}">
+  {% endfor %}
 
   <!-- Apply saved theme before paint to avoid flash -->
   <script>
@@ -45,6 +48,7 @@
       <ul class="nav-links">
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
         <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/wishlist' | relative_url }}">Wishlist</a></li>
         <li><a href="{{ '/#experience' | relative_url }}">Experience</a></li>
         <li><a href="{{ '/#skills' | relative_url }}">Skills</a></li>
       </ul>
