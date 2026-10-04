@@ -17,6 +17,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% for css in page.extra_css %}
+  <link rel="stylesheet" href="{% if css contains '://' %}{{ css }}{% else %}{{ css | relative_url }}{% endif %}">
+  {% endfor %}
 
   <!-- Apply saved theme before paint to avoid flash -->
   <script>
@@ -70,6 +73,7 @@
       <div class="footer-links">
         {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
         {% if site.author.linkedin %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+        <a href="{{ '/wishlist' | relative_url }}">Wishlist ✦</a>
       </div>
     </div>
   </footer>

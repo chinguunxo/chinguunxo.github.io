@@ -1,0 +1,12 @@
+{
+  "name": "chinguunxo-site",
+  "private": true,
+  "description": "Build step for the TypeScript on chinguunxo.github.io (compiled JS is committed).",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}

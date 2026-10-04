@@ -23,3 +23,15 @@ kramdown:
 
 plugins:
   - jekyll-feed
+
+# Keep the TypeScript toolchain out of the built site (compiled JS in assets/js is served)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - node_modules
+  - vendor
+  - assets/ts
