@@ -35,7 +35,7 @@
 	overflow: hidden;
 	background: var(--wl-blue);
 	aspect-ratio: 16 / 9;
-	max-height: calc(100vh - 52px);
+	max-height: calc(100vh - var(--header-h, 64px));
 	width: 100%;
 }
 
