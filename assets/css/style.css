@@ -2,35 +2,47 @@
    DESIGN TOKENS
 ─────────────────────────────────────────────────────── */
 :root {
-	--bg:            #ffffff;
-	--bg-alt:        #f4f6f9;
-	--bg-card:       #ffffff;
-	--text:          #0d1b2a;
-	--text-muted:    #5a6a7a;
-	--accent:        #1a3a5c;
-	--accent-mid:    #2a5f96;
-	--accent-light:  #4a8fc4;
-	--border:        #dde3ea;
-	--nav-from:      #1a3a5c;
-	--nav-to:        #2a5f96;
-	--font-serif:    "Lora", Georgia, serif;
-	--font-sans:     "Jost", system-ui, sans-serif;
+	/* Palette: SW Extra White · Cheery · Dynamic Blue · Blue Chip · Poseidon */
+	--extra-white:   #eff0eb;
+	--cheery:        #f193a3;
+	--dynamic-blue:  #198bca;
+	--blue-chip:     #0065ab;
+	--poseidon:      #006a66;
+
+	--bg:            var(--extra-white);
+	--bg-alt:        #e3e8e6;
+	--bg-card:       #f7f8f4;
+	--text:          #0f2d45;
+	--text-muted:    #3d6670;
+	--accent:        var(--poseidon);
+	--accent-mid:    var(--blue-chip);
+	--accent-light:  var(--dynamic-blue);
+	--pink:          var(--cheery);
+	--pink-soft:     #fbe3e7;
+	--border:        #d2dbdb;
+	--nav-from:      var(--blue-chip);
+	--nav-to:        var(--poseidon);
+	--font-display:  "Ingrid Darling", cursive;
+	--font-serif:    "Gupter", Georgia, serif;
+	--font-sans:     "Gupter", Georgia, serif;
 	--max-w:         860px;
 	--radius:        10px;
 }
 
 [data-theme="dark"] {
-	--bg:            #0d1b2a;
-	--bg-alt:        #112236;
-	--bg-card:       #152840;
-	--text:          #e8edf4;
-	--text-muted:    #7fa3c4;
-	--accent:        #4a8fc4;
-	--accent-mid:    #5ca3d8;
-	--accent-light:  #7abfe8;
-	--border:        #1e3a58;
-	--nav-from:      #0d1b2a;
-	--nav-to:        #152840;
+	--bg:            #0b1d2a;
+	--bg-alt:        #0f2736;
+	--bg-card:       #12303f;
+	--text:          var(--extra-white);
+	--text-muted:    #8fb8c6;
+	--accent:        #3fb3ab;
+	--accent-mid:    #5cb6e8;
+	--accent-light:  var(--dynamic-blue);
+	--pink:          var(--cheery);
+	--pink-soft:     #3a1f2a;
+	--border:        #1d3d4d;
+	--nav-from:      #08304f;
+	--nav-to:        #00403d;
 }
 
 /* ───────────────────────────────────────────────────────
@@ -44,11 +56,13 @@ body {
 	background: var(--bg);
 	color: var(--text);
 	font-family: var(--font-sans);
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.7;
 	-webkit-font-smoothing: antialiased;
 	transition: background 0.3s, color 0.3s;
 }
+
+::selection { background: var(--pink); color: #0f2d45; }
 
 a { color: var(--accent-mid); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -87,9 +101,10 @@ p:last-child { margin-bottom: 0; }
 }
 
 .nav-logo {
-	font-family: var(--font-sans);
-	font-size: 1.1rem;
-	font-weight: 500;
+	font-family: var(--font-display);
+	font-size: 1.75rem;
+	font-weight: 400;
+	line-height: 1;
 	color: #ffffff;
 	text-decoration: none;
 	letter-spacing: -0.01em;
@@ -176,8 +191,9 @@ p:last-child { margin-bottom: 0; }
 }
 
 .intro-name {
-	font-family: var(--font-serif);
-	font-size: clamp(1.5rem, 3vw, 2rem);
+	font-family: var(--font-display);
+	font-size: clamp(2.4rem, 5vw, 3.2rem);
+	line-height: 1.1;
 	font-weight: 400;
 	margin-bottom: 1rem;
 	color: var(--text);
@@ -223,15 +239,15 @@ p:last-child { margin-bottom: 0; }
 }
 .pill:hover { opacity: 0.85; transform: translateY(-1px); text-decoration: none; }
 
-.pill-github   { background: #f0eeff; border-color: #c4b8ff; color: #5c4bd4; }
-.pill-linkedin { background: #e8f2fd; border-color: #a8c8f0; color: #0a66c2; }
-.pill-tiktok   { background: #fdf0f6; border-color: #f5b8d8; color: #c0115e; }
-.pill-email    { background: #f0f4f8; border-color: #b8cce0; color: #3a5a7a; }
+.pill-github   { background: #dcefed; border-color: #7fb8b4; color: var(--poseidon); }
+.pill-linkedin { background: #dbe9f5; border-color: #7fb0d8; color: var(--blue-chip); }
+.pill-tiktok   { background: var(--pink-soft); border-color: var(--cheery); color: #b23a55; }
+.pill-email    { background: var(--pink-soft); border-color: var(--cheery); color: #b23a55; }
 
-[data-theme="dark"] .pill-github   { background: #1e1640; border-color: #4a3a8a; color: #a89cff; }
-[data-theme="dark"] .pill-linkedin { background: #0d2040; border-color: #1e4a7a; color: #6aaee8; }
-[data-theme="dark"] .pill-tiktok   { background: #2a0d1e; border-color: #6a1840; color: #f080b8; }
-[data-theme="dark"] .pill-email    { background: #0d1e2a; border-color: #1e3a52; color: #7aaac8; }
+[data-theme="dark"] .pill-github   { background: #0a2d2c; border-color: #1f5e5a; color: #6fd0c8; }
+[data-theme="dark"] .pill-linkedin { background: #0b2740; border-color: #1d5480; color: #7cc4ef; }
+[data-theme="dark"] .pill-tiktok   { background: var(--pink-soft); border-color: #7a3a4c; color: var(--cheery); }
+[data-theme="dark"] .pill-email    { background: var(--pink-soft); border-color: #7a3a4c; color: var(--cheery); }
 
 /* ───────────────────────────────────────────────────────
    COMPACT SECTIONS
@@ -241,8 +257,9 @@ p:last-child { margin-bottom: 0; }
 }
 
 .compact-heading {
-	font-family: var(--font-serif);
-	font-size: 1.25rem;
+	font-family: var(--font-display);
+	font-size: 2.1rem;
+	line-height: 1.1;
 	font-weight: 400;
 	color: var(--text);
 	margin-bottom: 1rem;
@@ -410,7 +427,7 @@ p:last-child { margin-bottom: 0; }
 	padding: 2.5rem 2rem 4rem;
 }
 .blog-index-header { margin-bottom: 2.5rem; }
-.blog-index-header h1 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+.blog-index-header h1 { font-family: var(--font-display); font-size: 3rem; line-height: 1.1; margin-bottom: 0.5rem; }
 .blog-index-desc {
 	color: var(--text-muted);
 	font-style: italic;
@@ -447,9 +464,9 @@ p:last-child { margin-bottom: 0; }
 .back-link:hover { color: var(--accent-mid); }
 .post-date { font-size: 0.75rem; color: var(--text-muted); }
 .post-title {
-	font-size: clamp(1.6rem, 4vw, 2.4rem);
-	line-height: 1.2;
-	letter-spacing: -0.02em;
+	font-family: var(--font-display);
+	font-size: clamp(2.1rem, 5vw, 3rem);
+	line-height: 1.15;
 	margin-bottom: 0.75rem;
 }
 .post-subtitle {
@@ -463,9 +480,9 @@ p:last-child { margin-bottom: 0; }
 	font-size: 0.68rem;
 	letter-spacing: 0.06em;
 	padding: 0.2rem 0.55rem;
-	background: var(--bg-alt);
-	border: 1px solid var(--border);
-	color: var(--text-muted);
+	background: var(--pink-soft);
+	border: 1px solid var(--pink);
+	color: var(--text);
 	border-radius: 4px;
 }
 
@@ -477,7 +494,7 @@ p:last-child { margin-bottom: 0; }
 .post-body ul, .post-body ol { padding-left: 1.5rem; margin-bottom: 1.15rem; }
 .post-body li { margin-bottom: 0.4rem; }
 .post-body blockquote {
-	border-left: 3px solid var(--accent-light);
+	border-left: 3px solid var(--pink);
 	padding: 0.75rem 0 0.75rem 1.5rem;
 	margin: 1.75rem 0;
 	color: var(--text-muted);
