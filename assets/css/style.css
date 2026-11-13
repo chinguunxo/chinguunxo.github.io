@@ -9,9 +9,9 @@
 	--blue-chip:     #0065ab;
 	--poseidon:      #006a66;
 
-	--bg:            var(--extra-white);
-	--bg-alt:        #e3e8e6;
-	--bg-card:       #f7f8f4;
+	--bg:            #ffffff;
+	--bg-alt:        #eff0eb;
+	--bg-card:       #ffffff;
 	--text:          #0f2d45;
 	--text-muted:    #3d6670;
 	--accent:        var(--poseidon);
@@ -67,12 +67,6 @@ body {
 	font-weight: 400;
 	line-height: 1.7;
 	-webkit-font-smoothing: antialiased;
-	/* faint confetti in the accent colours */
-	background-image:
-		radial-gradient(circle at 18% 22%, rgba(241, 147, 163, 0.28) 0 3px, transparent 3.5px),
-		radial-gradient(circle at 72% 64%, rgba(25, 139, 202, 0.2) 0 2.5px, transparent 3px),
-		radial-gradient(circle at 44% 82%, rgba(0, 106, 102, 0.16) 0 2px, transparent 2.5px);
-	background-size: 230px 230px, 310px 310px, 170px 170px;
 	transition: background-color 0.3s, color 0.3s;
 }
 
