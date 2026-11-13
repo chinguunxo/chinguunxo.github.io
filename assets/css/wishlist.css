@@ -5,17 +5,21 @@
    taped note card. Rendered by assets/ts/wishlist.ts.
 ─────────────────────────────────────────────────────── */
 .wishlist-page {
-	--wl-red:      #a52226;
-	--wl-red-deep: #7e1519;
-	--wl-cream:    #f7eedb;
-	--wl-tag:      #efe2c4;
-	--wl-ink:      #3b2a20;
-	--wl-ink-soft: #6b5444;
-	--wl-blue:     #78a9e2;
-	--wl-blue-pale:#dce8f6;
-	--wl-display:  "Fraunces", "Lora", Georgia, serif;
-	--wl-body:     "Source Serif 4", "Lora", Georgia, serif;
-	--wl-hand:     "Caveat", "Jost", cursive;
+	/* site palette (style.css): Cheery pink, Blue Chip, Poseidon, Dynamic Blue */
+	--wl-red:      var(--blue-chip);      /* main accent: titles, links */
+	--wl-red-deep: #004b80;
+	--wl-pink:     var(--cheery);
+	--wl-pink-deep:#d0687d;
+	--wl-teal:     var(--poseidon);
+	--wl-cream:    #f8f9f5;               /* notes & strips, a touch brighter than Extra White */
+	--wl-tag:      var(--extra-white);
+	--wl-ink:      #0f2d45;
+	--wl-ink-soft: #3d6670;
+	--wl-blue:     #78a9e2;               /* matches the gingham artwork */
+	--wl-blue-pale:#dbe9f5;
+	--wl-display:  var(--font-display);
+	--wl-body:     var(--font-serif);
+	--wl-hand:     var(--font-serif);
 	--wl-ease:     cubic-bezier(.34, 1.56, .64, 1); /* springy overshoot */
 
 	--mx: 0;
@@ -59,7 +63,7 @@
 	background: var(--wl-tag);
 	color: var(--wl-red);
 	font-family: var(--wl-hand);
-	font-size: clamp(1rem, 2vw, 1.35rem);
+	font-size: clamp(0.9rem, 1.6vw, 1.1rem);
 	font-weight: 700;
 	rotate: -2deg;
 	box-shadow: 0 6px 14px rgba(40, 60, 100, 0.25);
@@ -80,7 +84,7 @@
 	background: var(--wl-cream);
 	padding: 1rem 1.25rem;
 	/* little stitched-hem lines */
-	border-block: 2px dashed rgba(165, 34, 38, 0.45);
+	border-block: 2px dashed var(--wl-pink);
 	box-shadow: 0 0 0 6px var(--wl-cream), 0 10px 24px rgba(40, 60, 100, 0.18);
 }
 
@@ -101,7 +105,7 @@
 	font-size: 0.9rem;
 	color: var(--wl-ink);
 	background: #fff;
-	border: 1.5px solid var(--wl-blue);
+	border: 1.5px solid var(--dynamic-blue);
 	border-radius: 999px;
 	padding: 0.3rem 0.9rem;
 	cursor: pointer;
@@ -118,36 +122,36 @@
 
 .wish-count {
 	font-family: var(--wl-hand);
-	font-size: 1.2rem;
+	font-size: 0.95rem;
 	color: var(--wl-ink-soft);
 }
 
 .wish-button {
 	font-family: var(--wl-hand);
-	font-size: 1.35rem;
+	font-size: 1.05rem;
 	font-weight: 700;
-	color: var(--wl-cream);
-	background: var(--wl-red);
+	color: var(--wl-ink);
+	background: var(--wl-pink);
 	border: none;
 	/* cloud-ish blob like the hero title */
 	border-radius: 46% 54% 42% 58% / 60% 48% 52% 40%;
 	padding: 0.35rem 1.3rem 0.45rem;
 	cursor: pointer;
-	box-shadow: 0 4px 0 var(--wl-red-deep);
+	box-shadow: 0 4px 0 var(--wl-pink-deep);
 	transition: transform 0.3s var(--wl-ease), box-shadow 0.2s, border-radius 0.6s;
 }
 .wish-button:hover {
 	transform: translateY(-2px) rotate(3deg) scale(1.05);
 	border-radius: 58% 42% 55% 45% / 45% 58% 42% 55%;
 }
-.wish-button:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--wl-red-deep); }
+.wish-button:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--wl-pink-deep); }
 
 .wish-filter:focus-visible,
 .wish-button:focus-visible,
 .wish-scroll-cue:focus-visible,
 .wish-link:focus-visible,
 .wish-outro-link:focus-visible {
-	outline: 3px solid var(--wl-red);
+	outline: 3px solid var(--blue-chip);
 	outline-offset: 3px;
 }
 
@@ -161,7 +165,7 @@
 	translate: -50% -50%;
 	animation: spark 0.9s cubic-bezier(.2, .7, .3, 1) forwards;
 }
-.wish-spark:nth-child(even) { color: #e8b04a; }
+.wish-spark:nth-child(even) { color: var(--wl-pink); }
 
 @keyframes spark {
 	to {
@@ -215,14 +219,14 @@
 	position: absolute;
 	inset: 6%;
 	border-radius: 50%;
-	background: radial-gradient(circle, rgba(255, 214, 150, 0.95) 0%, rgba(247, 210, 160, 0.55) 38%, rgba(247, 238, 219, 0) 70%);
+	background: radial-gradient(circle, rgba(241, 147, 163, 0.75) 0%, rgba(241, 147, 163, 0.35) 38%, rgba(241, 147, 163, 0) 70%);
 	filter: blur(6px);
 	transform: scale(0.9);
 	opacity: 0.75;
 	transition: transform 0.7s var(--wl-ease), opacity 0.5s;
 }
 .wish--gingham .wish-glow {
-	background: radial-gradient(circle, rgba(255, 250, 238, 1) 0%, rgba(247, 238, 219, 0.75) 40%, rgba(247, 238, 219, 0) 70%);
+	background: radial-gradient(circle, rgba(248, 249, 245, 1) 0%, rgba(239, 240, 235, 0.75) 40%, rgba(239, 240, 235, 0) 70%);
 }
 
 .wish-product {
@@ -252,16 +256,17 @@
 	align-items: center;
 	justify-content: center;
 	gap: 0.4rem;
-	background: #fffaf0;
-	border: 2.5px dashed rgba(165, 34, 38, 0.45);
+	background: var(--wl-cream);
+	border: 2.5px dashed var(--wl-pink);
 	border-radius: 28px;
-	box-shadow: 0 0 0 10px #fffaf0;
+	box-shadow: 0 0 0 10px var(--wl-cream);
 }
 .wish-placeholder-emoji { font-size: clamp(4rem, 12vw, 7.5rem); line-height: 1; }
 .wish-placeholder-label {
 	font-family: var(--wl-hand);
-	font-size: 1.25rem;
-	color: var(--wl-red);
+	font-size: 1rem;
+	font-style: italic;
+	color: var(--wl-teal);
 }
 
 .wish-deco {
@@ -293,7 +298,7 @@
 	background-image: repeating-linear-gradient(
 		to bottom,
 		transparent 0 1.9rem,
-		rgba(120, 169, 226, 0.22) 1.9rem calc(1.9rem + 1px)
+		rgba(25, 139, 202, 0.18) 1.9rem calc(1.9rem + 1px)
 	);
 	background-position: 0 1.1rem;
 	transition: transform 0.6s var(--wl-ease), box-shadow 0.4s;
@@ -308,7 +313,7 @@
 	height: 28px;
 	translate: -50% 0;
 	rotate: -4deg;
-	background: rgba(165, 34, 38, 0.78);
+	background: rgba(241, 147, 163, 0.85);
 	/* zig-zag torn tape ends */
 	clip-path: polygon(0 10%, 4% 0, 8% 12%, 92% 0, 96% 12%, 100% 4%, 100% 90%, 96% 100%, 92% 88%, 8% 100%, 4% 88%, 0 96%);
 	transition: transform 0.5s var(--wl-ease);
@@ -319,19 +324,16 @@
 	top: 0.6rem;
 	right: 0.9rem;
 	font-family: var(--wl-hand);
-	font-size: 1.4rem;
-	color: rgba(165, 34, 38, 0.6);
+	font-size: 1rem;
+	color: var(--wl-teal);
 }
 
 .wish-title {
 	font-family: var(--wl-display);
-	font-style: italic;
 	font-weight: 400;
-	font-variation-settings: "opsz" 144, "SOFT" 100;
-	font-size: clamp(2.2rem, 4.6vw, 3.6rem);
-	line-height: 1.02;
+	font-size: clamp(3rem, 6vw, 4.6rem);
+	line-height: 1;
 	color: var(--wl-red);
-	letter-spacing: -0.01em;
 	margin-bottom: 0.9rem;
 }
 
@@ -356,12 +358,13 @@
 	padding: 0.15rem 0.65rem;
 	border-radius: 999px;
 	background: var(--wl-blue-pale);
-	color: #2f5d93;
+	color: var(--blue-chip);
 }
 
 .wish-link {
 	font-family: var(--wl-hand);
-	font-size: 1.2rem;
+	font-size: 0.95rem;
+	font-style: italic;
 	color: var(--wl-red);
 }
 
@@ -370,14 +373,14 @@
 	right: -1rem;
 	bottom: -1rem;
 	padding: 0.2rem 0.8rem;
-	border: 3px double var(--wl-red);
+	border: 3px double var(--wl-teal);
 	border-radius: 8px;
-	color: var(--wl-red);
+	color: var(--wl-teal);
 	font-family: var(--wl-hand);
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	font-weight: 700;
 	rotate: -14deg;
-	background: rgba(247, 238, 219, 0.85);
+	background: rgba(248, 249, 245, 0.85);
 	mix-blend-mode: multiply;
 }
 .wish--granted .wish-product { filter: drop-shadow(0 18px 18px rgba(40, 30, 20, 0.28)) saturate(0.75); }
@@ -453,18 +456,17 @@
 	padding: 3.5rem 1.5rem 4rem;
 	text-align: center;
 	background: var(--wl-cream);
-	border-top: 2px dashed rgba(165, 34, 38, 0.45);
+	border-top: 2px dashed var(--wl-pink);
 }
 .wish-outro-text {
 	font-family: var(--wl-display);
-	font-style: italic;
-	font-size: clamp(1.8rem, 4vw, 2.6rem);
+	font-size: clamp(2.6rem, 5vw, 3.6rem);
 	color: var(--wl-red);
 	margin-bottom: 0.75rem;
 }
 .wish-outro-link {
 	font-family: var(--wl-hand);
-	font-size: 1.3rem;
+	font-size: 1rem;
 	color: var(--wl-ink-soft);
 }
 
