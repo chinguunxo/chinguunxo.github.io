@@ -273,7 +273,7 @@ p:last-child { margin-bottom: 0; }
 /* polaroid with tape and a sticker shadow */
 .intro-photo {
 	position: relative;
-	padding: 10px 10px 34px;
+	padding: 10px;
 	background: var(--bg-card);
 	border-radius: 6px;
 	rotate: 2.5deg;
@@ -291,18 +291,6 @@ p:last-child { margin-bottom: 0; }
 	rotate: -5deg;
 	background: rgba(241, 147, 163, 0.8);
 	clip-path: polygon(0 10%, 4% 0, 8% 12%, 92% 0, 96% 12%, 100% 4%, 100% 90%, 96% 100%, 92% 88%, 8% 100%, 4% 88%, 0 96%);
-}
-.intro-photo::after {
-	content: "hi hi! ✿";
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 4px;
-	text-align: center;
-	font-family: var(--font-display);
-	font-size: 1.5rem;
-	line-height: 1.2;
-	color: var(--pink-ink);
 }
 .intro-photo:hover { rotate: -1.5deg; box-shadow: 10px 10px 0 var(--pink), 0 16px 32px -12px rgba(15, 45, 69, 0.4); }
 .intro-photo img {
@@ -374,9 +362,8 @@ p:last-child { margin-bottom: 0; }
 	font-weight: 400;
 	color: var(--heading);
 	margin-bottom: 1.4rem;
-	padding-right: 1.4rem;
 }
-/* pink squiggle underline + a little sparkle */
+/* pink squiggle underline */
 .compact-heading::after {
 	content: "";
 	position: absolute;
@@ -386,17 +373,6 @@ p:last-child { margin-bottom: 0; }
 	height: 8px;
 	background: var(--squiggle-pink) repeat-x left center / 24px 8px;
 }
-.compact-heading::before {
-	content: "✦";
-	position: absolute;
-	right: 0;
-	top: 0.1em;
-	font-family: var(--font-serif);
-	font-size: 1rem;
-	color: var(--dynamic-blue);
-}
-.compact-section:nth-of-type(3n+2) .compact-heading::before { content: "✿"; color: var(--pink); }
-.compact-section:nth-of-type(3n+3) .compact-heading::before { content: "♥"; color: var(--poseidon); }
 
 /* ───────────────────────────────────────────────────────
    TOOL CARDS
@@ -626,14 +602,7 @@ p:last-child { margin-bottom: 0; }
 	align-items: center;
 	gap: 1rem;
 }
-.footer-signoff p { margin: 0; }
-.footer-hello {
-	font-family: var(--font-display);
-	font-size: 2rem;
-	line-height: 1.1;
-	color: var(--heading);
-}
-.footer-copy { font-size: 0.8rem; color: var(--text-muted); }
+.footer-copy { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .footer-links a {
 	--c: var(--poseidon);
@@ -802,7 +771,6 @@ p:last-child { margin-bottom: 0; }
 		box-shadow: 5px 5px 0 var(--dynamic-blue);
 	}
 	.intro-photo::before { top: -6px; width: 64px; height: 20px; left: 70%; }
-	.intro-photo::after { display: none; }
 	.intro-photo img {
 		width: 140px;
 		aspect-ratio: 1;

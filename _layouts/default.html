@@ -69,10 +69,7 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-signoff">
-        <p class="footer-hello">thanks for stopping by ♥</p>
-        <p class="footer-copy">© {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
-      </div>
+      <p class="footer-copy">© {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
       <div class="footer-links">
         {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
         {% if site.author.linkedin %}<a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
